@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<title>fullPage.js — 项目导航演示_dowebok</title>
+	<link rel="stylesheet" href="../css/jquery.fullPage.css">
+	<link rel="stylesheet" href="../css/lcr.css">
+	<style>
+       #box{
+           width:960px;
+           height:218px;
+           position: relative;
+       }
+       #show{
+           width:960px;
+           height:218px;
+           overflow: hidden;
+           position: relative;
+       }
+       #content{
+           position:absolute;
+           width:4800px;
+           height:218px;
+           left:0;
+       }
+       #content p{
+           float:left;
+           width:960px;
+		   height:218px;
+		   text-align: center;
+		   font-size: 20px;
+		   line-height: 40px;
+       }
+       #jd{
+           position: absolute;
+           z-index: 999;
+           margin:0;
+           padding:0;
+           list-style-type: none;
+           top:450px;
+           left:389px;
+       }
+       #jd li{
+           float:left;
+           width:10px;
+           height:10px;
+           background:#ccc;
+           margin-left:20px;
+           border-radius: 50%;
+       }
+       #jd .bg{
+           background:#ff8000;
+       }
+       #left,#right{
+             width:40px;
+             height: 40px;
+             position: absolute;
+             top:100px;
+             font-weight: bold;
+       }
+       #right{
+             left:500px;
+       }
+	</style>
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/jquery.fullPage.min.js"></script>
+	<script>
+		$(function () {
+			$('#dowebok').fullpage({
+
+				'navigation': true,
+			});
+
+   
+			//banner
+			var n=0;
+			function ss(){
+                if(n<4){
+                     $("#content").animate({"left":"-=960px"},1000);
+                     n++;
+                }else{
+                    $("#content").animate({"left":"0px"},1);
+                    n=0;
+                }
+                if(n==4){
+                    $("#jd").children().eq(0).addClass("bg")
+                    $("#jd").children().eq(3).removeClass()
+                }
+                $("#jd").children().eq(n).addClass("bg").siblings().removeClass()
+            }
+          var time= setInterval(ss,2000);
+       $("#banner").mouseenter(function(){
+            clearInterval(time);
+       }).mouseleave(function(){
+           time= setInterval(ss,2000);
+       })
+       $("#jd").children().click(function(){
+               clearInterval(time);
+              var df=$(this).attr("data-index");
+              $("#content").animate({"left":'-'+600*df+'px'},1);
+              $(this).parent().children().removeClass();
+              $(this).addClass("bg");
+              n=df;
+       })
+		});
+	</script>
+</head>
+
+<body>
+	<div id="dowebok">
+		<div class="section img1">
+			<div class="page1">
+				<img src="../img/DXZXR])`JGXUM$4T}_TFY33.png">
+				<p class="dl">登陆</p>
+				<div class="page1_1">
+					<p class="ff"> <span>你</span><span>的</span><span>音</span><span>乐</span><span>,</span><span>快</span><span>点</span><span>听</span><span>见</span></p>
+					<p class="ss"><span>快</span><span>手</span><span>原</span><span>创</span><span>音</span><span>乐</span><span>加</span><span>速</span><span>器</span></p>
+					<p class="jr">加入音乐人</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="section img2">
+			<div class="page2">
+				<img src="../img/_$P3{H)QE9BQ`MFC00MQWFY.jpg">
+				<p class="dl">登陆</p>
+				<div class="page1_2">
+					<p class="ff_"> <span>快</span><span>手</span><span>"</span><span>原</span><span>创</span><span>音</span><span>乐</span><span>加</span><span>速</span><span>器</span><span>"</span></p>
+					<p class="ss_">致力于扶持全世界范围内怀揣音乐梦想的原创音乐人，依托平台强大的流量资源和曝光量，更好的为原创音乐保驾护航，让每个音乐人都有机会把自己的作品唱给世界听。</p>
+					<p class="jr_">加入音乐人</p>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="page2">
+				<img src="../img/CLKD`CQ5N9[OW31C55KSRU4.png">
+				<p class="dl">登陆</p>
+				<div class="page1_3">
+                    <div class="box">
+							<div id="show">
+									<div id="content">
+										<p data-index="0">多样收入形式<br>
+												优质音乐人可通过打赏佣金等多样收入，年薪轻松破百万</p>
+										<p data-index="1">亿万流量听你唱<br>
+												黄金置顶推荐位、用户搜索置顶，作品无缝跳转作者主页</p>
+										<p data-index="2">
+												国民级短视频平台<br>
+												每天超过1亿用户使用，让你的音乐瞬间火遍网络</p>
+										<p data-index="3">打造立体影响力<br>
+												突破站内站外屏障，影响力覆盖全网</p>
+										<p data-index="0">多样收入形式<br>
+												优质音乐人可通过打赏佣金等多样收入，年薪轻松破百万</p>
+									</div>
+								</div>
+								<ul id="jd">
+									<li class="bg" data-index="0"></li>
+									<li data-index="1"></li>
+									<li data-index="2"></li>
+									<li data-index="3"></li>     
+								</ul>
+					</div>
+					<p class="jr__">加入音乐人</p>
+					<img src="../img/HF_4$G(}5R542M8YT2QW0[S.png" class="img2">
+				</div>
+			</div>
+		</div>
+	</div>

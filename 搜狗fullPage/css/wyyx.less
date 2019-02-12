@@ -1,0 +1,168 @@
+@w:width;
+@h:height;
+@bg:background;
+@m0a:{margin: 0 auto;};
+@pr:{position: relative;};
+@pa:{position: absolute;};
+@fs:font-size;
+@fw:font-weight;
+@lh:line-height;
+@color:color;
+@float_l:{float: left;};
+@float_r:{float: right;};
+@tac:{text-align: center;};
+@br:border-radius;
+@cp:{cursor: pointer;};
+@share:{
+            @{w}:100%;
+            @{h}:100%;
+            .a1{
+                @{w}:100%;
+                @{h}:100%;
+                display: table;
+                table-layout: fixed;
+                .a2{
+                    @{w}:100%;
+                    @{h}:800px;
+                    display: table-cell;
+                    vertical-align: middle;
+                    .a3{
+                        display: block;
+                        @{fs}:60px;
+                        @tac();
+                        @{lh}:93px;
+                        @{bg}:url(../images/whl_3.png) no-repeat center bottom;
+                        opacity: 0.8;
+                    }
+                    .a4{
+                        @{fs}:40px;
+                        @tac();
+                        @{lh}:75px;
+                        opacity: 0.8;
+                    }
+                    .a5{
+                        @{fs}:24px;
+                        @tac();
+                        @{lh}:48px;
+                        margin-top: 20px;
+                        opacity: 0.7;
+                    }
+                    .a6{
+                        cursor: pointer;
+                        @tac();
+                        margin: 85px auto 0;
+                        @{w}: 220px;
+                        @{h}: 50px;
+                        @pr();
+                        @{bg}: #5396FF;
+                        @{color}: #fff;
+                        @{lh}: 50px;
+                        @{fs}: 24px;
+                        border-radius: 25px; 
+                    }
+                }
+            }
+};
+#menu {
+     margin: 0; 
+     padding: 0;
+      position: fixed; 
+      right: 20px; 
+      top: 50%;
+      margin-top: -60px; 
+      list-style-type: none; 
+      z-index: 70;
+      li { 
+        font-size: 14px;
+        margin-bottom:10px;
+        width:16px;
+        height:16px;
+        @{lh}:16px;
+        @tac();
+        border-radius:50%;
+       }
+       a {
+           display: block;
+           @pr();
+           top: 5px;
+           left: 5px;
+           width:5px;
+           height:5px;
+           background-color: #fff; 
+           color: #333; 
+           text-decoration: none;
+           border-radius:50%;
+           &:hover{
+               @{w}:10px;
+               @{h}:10px;
+               @pr();
+               left: 2px;
+               top: 2px;   
+           }
+        }
+        .active a { 
+            color: #333; 
+            @{w}:14px;
+            @{h}:14px;
+            top: 0;
+            left: 0.5px;
+            background-color: #fff;
+        }
+    }
+    #top{
+        @{w}:100%;
+        @{h}:50px;
+        @pa();
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        @{bg}:rgba(0, 0, 0,0.6);
+        article{
+            @{w}:1000px;
+            @{h}:50px;
+            @m0a();
+            img{
+                @{w}:32px;
+                float: left;
+                margin-top: 9px;
+                cursor: pointer;
+            }
+            ul{
+                li{
+                    float: right;
+                    @{lh}:50px;
+                    margin-left: 35px;
+                    @{fs}:12px;
+                    @{color}:#fff;
+                    cursor: pointer;
+                    &:hover{
+                        @{color}:#83c3f3;
+                    }
+                }
+            }
+        }
+    }
+    #fullpage{
+        .section1{
+            @{bg}:url(../images/whl_1.jpg) no-repeat center center;
+            background-size: cover;
+            @share();
+            
+        }   
+        .section2{
+            @{bg}:url(../images/whl_4.jpg) no-repeat center center;
+            background-size: cover;
+            @share();
+        }
+        .section3{
+            @{bg}:url(../images/whl_5.jpg) no-repeat center center;
+            background-size: cover;
+            @share();
+        }
+        .section4{
+            @{bg}:url(../images/whl_6.jpg) no-repeat center center;
+            background-size: cover;
+            @share();
+        }
+    }

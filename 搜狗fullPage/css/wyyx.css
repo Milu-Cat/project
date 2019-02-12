@@ -1,0 +1,286 @@
+#menu {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  margin-top: -60px;
+  list-style-type: none;
+  z-index: 70;
+}
+#menu li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+}
+#menu a {
+  display: block;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 50%;
+}
+#menu a:hover {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: 2px;
+  top: 2px;
+}
+#menu .active a {
+  color: #333;
+  width: 14px;
+  height: 14px;
+  top: 0;
+  left: 0.5px;
+  background-color: #fff;
+}
+#top {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+}
+#top article {
+  width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+}
+#top article img {
+  width: 32px;
+  float: left;
+  margin-top: 9px;
+  cursor: pointer;
+}
+#top article ul li {
+  float: right;
+  line-height: 50px;
+  margin-left: 35px;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+#top article ul li:hover {
+  color: #83c3f3;
+}
+#fullpage .section1 {
+  background: url(../images/whl_1.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section1 .a1 {
+  width: 100%;
+  height: 100%;
+  display: table;
+  table-layout: fixed;
+}
+#fullpage .section1 .a1 .a2 {
+  width: 100%;
+  height: 800px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#fullpage .section1 .a1 .a2 .a3 {
+  display: block;
+  font-size: 60px;
+  text-align: center;
+  line-height: 93px;
+  background: url(../images/whl_3.png) no-repeat center bottom;
+  opacity: 0.8;
+}
+#fullpage .section1 .a1 .a2 .a4 {
+  font-size: 40px;
+  text-align: center;
+  line-height: 75px;
+  opacity: 0.8;
+}
+#fullpage .section1 .a1 .a2 .a5 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 48px;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+#fullpage .section1 .a1 .a2 .a6 {
+  cursor: pointer;
+  text-align: center;
+  margin: 85px auto 0;
+  width: 220px;
+  height: 50px;
+  position: relative;
+  background: #5396FF;
+  color: #fff;
+  line-height: 50px;
+  font-size: 24px;
+  border-radius: 25px;
+}
+#fullpage .section2 {
+  background: url(../images/whl_4.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section2 .a1 {
+  width: 100%;
+  height: 100%;
+  display: table;
+  table-layout: fixed;
+}
+#fullpage .section2 .a1 .a2 {
+  width: 100%;
+  height: 800px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#fullpage .section2 .a1 .a2 .a3 {
+  display: block;
+  font-size: 60px;
+  text-align: center;
+  line-height: 93px;
+  background: url(../images/whl_3.png) no-repeat center bottom;
+  opacity: 0.8;
+}
+#fullpage .section2 .a1 .a2 .a4 {
+  font-size: 40px;
+  text-align: center;
+  line-height: 75px;
+  opacity: 0.8;
+}
+#fullpage .section2 .a1 .a2 .a5 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 48px;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+#fullpage .section2 .a1 .a2 .a6 {
+  cursor: pointer;
+  text-align: center;
+  margin: 85px auto 0;
+  width: 220px;
+  height: 50px;
+  position: relative;
+  background: #5396FF;
+  color: #fff;
+  line-height: 50px;
+  font-size: 24px;
+  border-radius: 25px;
+}
+#fullpage .section3 {
+  background: url(../images/whl_5.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section3 .a1 {
+  width: 100%;
+  height: 100%;
+  display: table;
+  table-layout: fixed;
+}
+#fullpage .section3 .a1 .a2 {
+  width: 100%;
+  height: 800px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#fullpage .section3 .a1 .a2 .a3 {
+  display: block;
+  font-size: 60px;
+  text-align: center;
+  line-height: 93px;
+  background: url(../images/whl_3.png) no-repeat center bottom;
+  opacity: 0.8;
+}
+#fullpage .section3 .a1 .a2 .a4 {
+  font-size: 40px;
+  text-align: center;
+  line-height: 75px;
+  opacity: 0.8;
+}
+#fullpage .section3 .a1 .a2 .a5 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 48px;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+#fullpage .section3 .a1 .a2 .a6 {
+  cursor: pointer;
+  text-align: center;
+  margin: 85px auto 0;
+  width: 220px;
+  height: 50px;
+  position: relative;
+  background: #5396FF;
+  color: #fff;
+  line-height: 50px;
+  font-size: 24px;
+  border-radius: 25px;
+}
+#fullpage .section4 {
+  background: url(../images/whl_6.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#fullpage .section4 .a1 {
+  width: 100%;
+  height: 100%;
+  display: table;
+  table-layout: fixed;
+}
+#fullpage .section4 .a1 .a2 {
+  width: 100%;
+  height: 800px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#fullpage .section4 .a1 .a2 .a3 {
+  display: block;
+  font-size: 60px;
+  text-align: center;
+  line-height: 93px;
+  background: url(../images/whl_3.png) no-repeat center bottom;
+  opacity: 0.8;
+}
+#fullpage .section4 .a1 .a2 .a4 {
+  font-size: 40px;
+  text-align: center;
+  line-height: 75px;
+  opacity: 0.8;
+}
+#fullpage .section4 .a1 .a2 .a5 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 48px;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+#fullpage .section4 .a1 .a2 .a6 {
+  cursor: pointer;
+  text-align: center;
+  margin: 85px auto 0;
+  width: 220px;
+  height: 50px;
+  position: relative;
+  background: #5396FF;
+  color: #fff;
+  line-height: 50px;
+  font-size: 24px;
+  border-radius: 25px;
+}

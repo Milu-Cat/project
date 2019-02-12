@@ -1,0 +1,347 @@
+@w:width;
+@h:height;
+@bg:background;
+@m0a:{margin: 0 auto;};
+@pr:{position: relative;};
+@pa:{position: absolute;};
+@fs:font-size;
+@fw:font-weight;
+@lh:line-height;
+@color:color;
+@float_l:{float: left;};
+@float_r:{float: right;};
+@tac:{text-align: center;};
+@br:border-radius;
+@cp:{cursor: pointer;};
+nav{
+    @{w}:100%;
+    @{h}:60px;
+    @{bg}:#f8f8f8;
+    overflow: hidden;
+    .a{
+        @{h}:60px;
+       img{
+           @{h}: 28px;
+           @pr();
+           top: -3px;
+           margin-right: 7px;
+       }
+       .a1{
+           @{fs}:18px;
+           @{fw}:bold;
+           @{color}:#2f2e2e;
+           @pr();
+           @{lh}:60px;
+       }
+    }
+    .b{
+        @{h}:60px;
+        ul{
+            @float_r();
+            @{h}:37px;
+            @{w}:48px;
+            margin-top: 11px;
+            margin-right: 15px;
+            border-radius: 5px;
+            &:hover{
+                @{bg}:#ddd;
+                @{br}:5px;
+                @cp();
+
+            }
+            li{
+                @{h}:3px;
+                @{w}:28px;
+                margin-bottom: 5px;
+                margin-left: 10px;
+                @{bg}:#2f2e2e;
+            }
+            .a2{
+                margin-top: 8px;
+            }
+        }
+    }
+}
+.bujunav{
+     @{w}:100%;
+     @{bg}:#f8f8f8;
+     overflow: hidden;
+     #row1{
+        display: none;
+    }
+    .a3{
+        @{h}:43px;
+        @{lh}:43px;
+        @{color}:#2f2e2e;
+        @{fs}:12px;
+        @cp();
+        &:hover{
+            @{color}:#f89;
+        }
+    }
+}
+.buju1{
+    @{w}:100%;
+    @{bg}:url(../images/whl_1.jpg) no-repeat top center;
+    background-size: cover;
+    @pr();
+    overflow: hidden;
+    .a4{
+        @{h}:100%;
+        @{bg}:#fff;
+    }
+    .a5{
+        @{fw}:bold;
+        @tac();
+    }
+    .b1{
+        @tac();
+        @keyframes a {
+            from{
+                transform: rotate(0);
+            }to{
+                transform: rotate(360deg);
+            }
+        }
+        &:hover{
+            animation: a 0.8s forwards;
+        }
+    }
+}
+.buju2{
+    @{w}:100%;
+    @{h}:100%;
+    @{bg}:#fff;
+    padding-top: 120px;
+    overflow: hidden;
+    .b2{
+        @{w}:100%;
+        @{color}:#2f2e2e;
+        @{fs}:22px;
+        @{fw}:bold;
+        @tac();
+    }
+    .b3{
+        @{h}:3px;
+        @{w}:40px;
+        @{bg}:#f7931d;
+        @pr();
+        top: 46px;
+        left: 50%;
+        margin-left: -20px;
+    }
+    .b4{
+        @tac();
+        @{color}:#2F2E2E;
+        margin-bottom: 100px;
+        .b8{
+            margin-top: 100px;
+        }
+        .b5{
+            margin-bottom: 25px;
+            &:hover{
+             animation: a 0.8s forwards;
+            } 
+        }
+        .b6{
+            @{fs}:16px;
+            margin-bottom: 45px;
+        }
+        .b7{
+            @{fs}:12px;
+            padding:0 60px;
+        }
+    }
+}
+.buju3{
+    @{w}:100%;
+    @{bg}:#fff;
+    overflow: hidden;
+    img{
+        @{w}:100%;
+        @pr();
+    }
+    .c6a{
+        @{w}:100%;
+        @{h}:100%;
+        overflow: hidden;
+        }
+    .c5{
+        overflow: hidden;
+        padding: auto;
+    }
+    .c3a{
+        @pr();
+        @{w}:100%;
+        @{h}:100%;
+        overflow: hidden;
+        margin-bottom: 25px;
+    .c1{
+        @{w}:100%;
+        @{h}:100%;
+        @{bg}:rgba(29, 28, 28, 0.5);
+        @pa();
+        top: 0;
+        left: 0;
+        z-index: 9;
+        display: none;
+    }
+    .c2{
+        @{bg}:rgba(0,0,0,.6);
+        @{w}:100%;
+        @{h}:100%;
+        @pa();
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: none;
+        .c3{
+           @{fs}:21px;
+           @{color}:#fff;
+           @pr();
+           top: 15px;
+           left: 15px; 
+
+        }  
+        .c4{
+            @{fs}:16px;
+            @{color}:#fff;  
+            @pa();
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+}
+}
+.buju4{
+    @{w}:100%;
+    @{h}:100%;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    @{bg}:#fff;
+    overflow: hidden;
+    img{
+        @{w}:100%;
+        @{h}:100%;
+    }
+    .d1{
+        margin-top: 100px;
+    }
+    .b3{
+        @{h}:3px;
+        @{w}:40px;
+        @{bg}:#f7931d;
+        @pr();
+        top: 46px;
+        left: 50%;
+        margin-left: -20px;
+    }
+    .b2{
+        @{w}:100%;
+        @{color}:#2f2e2e;
+        @{fs}:22px;
+        @{fw}:bold;
+        @tac();
+    }
+    .d2{
+        @{fs}:65px;
+        @{fw}:bold;
+        @{lh}:65px;
+    }
+    .d3{
+        margin:10px 0;
+        @{fs}:24px;
+        @{fw}:bold;
+        @{lh}:35px; 
+    }
+    .d4{
+        @{fs}:14px;
+        @{color}:#2f2e2e;
+        letter-spacing: 2px;
+        @{lh}:22px;
+    }
+    .d5{
+        @{color}:#2f2e2e;
+        letter-spacing: 2px;
+        @{fs}:14px;
+    }
+    .d6{
+        margin-top: 100px;
+        .swiper-slide{
+            @tac();
+            img{
+                @{w}:160px;
+                @{h}:160px;
+                @{br}:50%;  
+                margin: 20px; 
+            }
+            .d7{
+                @{fs}:18px;
+            }
+            .d8{
+                @{fs}:16px;
+                margin-top: 40px;
+                margin-bottom: 70px;
+            }
+        }
+    }
+}
+.buju5{
+    @{w}:100%;
+    @{h}:100%;
+    overflow: hidden;
+    @{bg}:rgba(47,46,46,0.7);
+    padding-top: 90px;
+    .r1{
+       img{
+        @{w}:100px;
+      }
+      @tac();
+      margin-bottom: 20px;
+    }   
+    .r2{
+        margin-bottom: 70px;
+    }
+    .r3{
+        img{
+            @{w}:150px;
+        }
+        .p1{
+            margin-top: 30px;
+        }
+        p{
+            @{w}:100%;
+           @tac();
+           @{fs}:16px;
+           @{color}:#fff;
+        }
+        .p2{
+            margin-bottom: 120px;
+        }
+    }
+}
+.buju6{
+    @{w}:100%;
+    @{h}:82px;
+    @{bg}:#2f2e2e;
+    overflow: hidden;
+    p{
+        @tac();
+        @{fs}:14px;
+        @{color}:#999;
+        @{lh}:82px;
+    }
+}
+.buju7{
+    @{w}:100%;
+    @{h}:770px;
+    @pa();
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+    img{
+        @{w}:100%;
+        @{h}:100%;
+    }
+}

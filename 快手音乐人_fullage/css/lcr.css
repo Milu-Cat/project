@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.img1 {
+  background-image: url(../img/banner_special_1522222601068_411504.jpg);
+  background-size: 100%,100%;
+  position: relative;
+}
+.img2 {
+  background-image: url(../img/banner_special_1522407027876_949344.jpg);
+  background-size: 100%,100%;
+  position: relative;
+}
+.page1,
+.page2 {
+  width: 960px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+  text-align: center;
+}
+.page1 img,
+.page2 img {
+  float: left;
+  margin-top: 29px;
+}
+.page1 .dl,
+.page2 .dl {
+  float: right;
+  margin-top: 49px;
+  color: #ff8000;
+  font-size: 13px;
+}
+.page1 .page1_1,
+.page2 .page1_1,
+.page1 .page1_2,
+.page2 .page1_2 {
+  clear: both;
+  margin-top: 350px;
+}
+.page1 .page1_1 .ff,
+.page2 .page1_1 .ff,
+.page1 .page1_2 .ff,
+.page2 .page1_2 .ff,
+.page1 .page1_1 .ff_,
+.page2 .page1_1 .ff_,
+.page1 .page1_2 .ff_,
+.page2 .page1_2 .ff_ {
+  font-size: 48px;
+  color: #ffffff;
+  font-family: PingFangSC-Regular;
+}
+.page1 .page1_1 .ff span,
+.page2 .page1_1 .ff span,
+.page1 .page1_2 .ff span,
+.page2 .page1_2 .ff span,
+.page1 .page1_1 .ff_ span,
+.page2 .page1_1 .ff_ span,
+.page1 .page1_2 .ff_ span,
+.page2 .page1_2 .ff_ span {
+  margin-right: 30px;
+}
+.page1 .page1_1 .ff_,
+.page2 .page1_1 .ff_,
+.page1 .page1_2 .ff_,
+.page2 .page1_2 .ff_ {
+  font-size: 24px;
+  margin-left: 60px;
+}
+.page1 .page1_1 .ff_ span,
+.page2 .page1_1 .ff_ span,
+.page1 .page1_2 .ff_ span,
+.page2 .page1_2 .ff_ span {
+  margin-right: 15px;
+}
+.page1 .page1_1 .ss,
+.page2 .page1_1 .ss,
+.page1 .page1_2 .ss,
+.page2 .page1_2 .ss,
+.page1 .page1_1 .ss_,
+.page2 .page1_1 .ss_,
+.page1 .page1_2 .ss_,
+.page2 .page1_2 .ss_ {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+.page1 .page1_1 .ss span,
+.page2 .page1_1 .ss span,
+.page1 .page1_2 .ss span,
+.page2 .page1_2 .ss span,
+.page1 .page1_1 .ss_ span,
+.page2 .page1_1 .ss_ span,
+.page1 .page1_2 .ss_ span,
+.page2 .page1_2 .ss_ span {
+  margin-right: 15px;
+}
+.page1 .page1_1 .ss_,
+.page2 .page1_1 .ss_,
+.page1 .page1_2 .ss_,
+.page2 .page1_2 .ss_ {
+  margin-top: 30px;
+  width: 500px;
+  height: 300px;
+  font-size: 16px;
+  letter-spacing: 8px;
+  margin-left: 60px;
+  line-height: 30px;
+}
+.page1 .page1_1 .jr,
+.page2 .page1_1 .jr,
+.page1 .page1_2 .jr,
+.page2 .page1_2 .jr,
+.page1 .page1_1 .jr_,
+.page2 .page1_1 .jr_,
+.page1 .page1_2 .jr_,
+.page2 .page1_2 .jr_,
+.page1 .page1_1 .jr__,
+.page2 .page1_1 .jr__,
+.page1 .page1_2 .jr__,
+.page2 .page1_2 .jr__ {
+  color: #ffffff;
+  width: 225px;
+  height: 48px;
+  background: #ff8000;
+  border-radius: 30px;
+  line-height: 48px;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.page1 .page1_1 .jr_,
+.page2 .page1_1 .jr_,
+.page1 .page1_2 .jr_,
+.page2 .page1_2 .jr_ {
+  margin-top: -120px;
+  text-align: center;
+  margin-left: 50px;
+}
+.page1_3 {
+  margin-top: 270px;
+}
+.page1_3 .box {
+  width: 960px;
+  height: 218px;
+}
+.page1_3 .jr__ {
+  text-align: center;
+  color: #ffffff;
+  width: 225px;
+  height: 48px;
+  background: #ff8000;
+  border-radius: 30px;
+  line-height: 48px;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.page1_3 .img2 {
+  margin-top: 120px;
+}
+.page2 {
+  text-align: left;
+}
